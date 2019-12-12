@@ -75,7 +75,7 @@ Download the model weights as .ckpt file in "./model/" and hit the same commands
 - [Docker](docs/CONTRIBUTING.md)
 
 ## Issues
-- [How to handle overfitting](docs/regularization.md)
+- [How to handle overfitting](documentation/regularization.md)
 - [Modules](docs/CONTRIBUTING.md)
 - [Data](docs/CONTRIBUTING.md)
 - [Architecture](docs/CONTRIBUTING.md)
