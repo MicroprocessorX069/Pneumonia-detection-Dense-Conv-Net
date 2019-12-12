@@ -2,6 +2,11 @@
 
 Do you know what goes on inside a convolutional network? How does a network decide which one is the car, which one is the cat?
 
+### Introduction
+It is difficult to visualize and know the meaning of hidden features in a deep network with respect to the output. CAMs are a great way to check the relation between the image and the output.
+The whole learning of neural network relies heavily on the weights. 
+CAMs uses the weights as an explanation to the relation between input and label.
+
 ### What are CAMs?
 > It is a visualization to check what part of the image is relating to label of the image
 
@@ -12,13 +17,9 @@ E.g. The hair, facial hair, eyebrow styles play an important role to classify a 
 #### Examples
 ![Example of CAMs](https://github.com/jacobgil/keras-grad-cam/raw/master/examples/boat.jpg?raw=true)
 ![Example of CAMs on MNIST](https://miro.medium.com/max/255/1*o3fkwaqA1l7xKBYnvMru1Q.png)
-### Details
-It is difficult to visualize and know the meaning of hidden features in a deep network with respect to the output. CAMs are a great way to check the relation between the image and the output.
-The whole learning of neural network relies heavily on the weights. 
-CAMs uses the weights as an explanation to the relation between input and label.
 
+### Implementation in pytorch
 
-### Implementation
 CAMs require a global average pooling layer after the last convolutional layer of the network, followed by a hidden dense layer.
  #### What is a global average pooling layer?
  Support we have a tensor of size 64x64x128. The GAP layer would simple average all the channels to 
