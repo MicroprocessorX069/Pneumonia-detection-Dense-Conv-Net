@@ -70,7 +70,7 @@ Download the model weights as .ckpt file in "./model/" and hit the same commands
 - [Data](docs/CONTRIBUTING.md)
 - [Architecture](docs/CONTRIBUTING.md)
 - [Code structure](docs/CONTRIBUTING.md)
-- [Class activation mappings](docs/CONTRIBUTING.md)
+- [Class activation mappings](documentation/cam.md)
 - [Distributed training](docs/CONTRIBUTING.md)
 - [Docker](docs/CONTRIBUTING.md)
 
