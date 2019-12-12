@@ -68,7 +68,7 @@ Alpha is a hyperparameter to tune the effect of regularization.
 
 When our training algorithm minimizes the regularized objective function.
 
-![l2 norm](/image res/l2.PNG)
+![l2 norm](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/l2.PNG)
 
 Norm penalty Ω penalizes only weights at each layer and leaves biases unregularized
 It is also called **Weight decay or ridge regression or Tikhonov regularization**
