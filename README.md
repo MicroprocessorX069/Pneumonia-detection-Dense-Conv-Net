@@ -74,6 +74,16 @@ Download the model weights as .ckpt file in "./model/" and hit the same commands
 - [Distributed training](docs/CONTRIBUTING.md)
 - [Docker](docs/CONTRIBUTING.md)
 
+## Issues
+- [How to handle overfitting](docs/CONTRIBUTING.md)
+- [Modules](docs/CONTRIBUTING.md)
+- [Data](docs/CONTRIBUTING.md)
+- [Architecture](docs/CONTRIBUTING.md)
+- [Code structure](docs/CONTRIBUTING.md)
+- [Class activation mappings](documentation/cam.md)
+- [Distributed training](docs/CONTRIBUTING.md)
+- [Docker](docs/CONTRIBUTING.md)
+
 ## Related projects
 ## Acknowledgements
 
