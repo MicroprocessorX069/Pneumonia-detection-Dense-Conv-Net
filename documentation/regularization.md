@@ -58,7 +58,7 @@ A loss function which the model tries to minimize to fit better on the data.
 
 We add an extra term -' Regularization parameter' to control the complexity of the model.
 
-![Objective function](Image url)
+![Objective function](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/obj_fun.PNG)
 
 where αε[0,θ) is a hyperparameter that weight the relative contribution of the norm penalty term Ω
 Here Theta is the weights or the parameters of the model, X,Y are the features and output of the data.
@@ -67,6 +67,8 @@ Alpha is a hyperparameter to tune the effect of regularization.
 ### L2 Regularization
 
 When our training algorithm minimizes the regularized objective function.
+![l2 norm](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/l2.PNG)
+
 Norm penalty Ω penalizes only weights at each layer and leaves biases unregularized
 It is also called **Weight decay or ridge regression or Tikhonov regularization**
 
@@ -83,7 +85,7 @@ loss += lambda * l2_reg
 ### L1 Regularization
 L1 regularization, another way to penalize model parameters, is defined as **the sum of the absolute values of the individual parameters**
 
-![l1 norm]()
+![l1 norm](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/l1.PNG)
 
 #### Sparsity and feature selection
 - The sparsity property induced by L1 regularization has been used extensively as a feature selection mechanism
