@@ -1,0 +1,10 @@
+flask
+flask_mysqldb
+wtforms
+torch
+torchvision
+numpy
+Pillow
+matplotlib
+skimage
+scipy
