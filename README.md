@@ -11,12 +11,16 @@ https://arxiv.org/abs/1711.05225
 ## Broader look out:
 The 121 layered convolutional neural network has acheived the state of the art detection of pneumonia over manual detection by human radiologist, compared by F1 scores. It uses a dataset of 100000 Chest X-rays 14 dataset annotated by four radiologists.
 
+### Examples
+![ChestXray input](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/chestxray.PNG)
+![ChestXray cam output](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/chestxraycam.PNG)
+
 ### Architecture
+
 
 ### Prerequisites
 ### Usage
 
-#### Installation
 #### Requirements
 - Python 3.5+
 - PyTorch 0.3.0
@@ -40,30 +44,38 @@ The directory structure is followed as
 #### Train/ test
 1. Clone the repository
 ```
-$ git clone https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API.git
-$ cd Generalized-pix2pix-GAN-API
+$ git clone https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net.git
+$ cd Pneumonia-detection-Dense-Conv-Net
+```
+2. Install the libraries
+```
+pip3 install requirements.txt
 ```
 3. Train
-(i) Train
+(i) Download data
 ```
-$ python python train.py --root_dir "./" --version "1.0" --batch_size 64 --input_width 32 --input_height 32 
+
 ```
-(ii) Test
+(ii)Train the model
+```
+$ python python train.py
+```
+4.Test
 '''
-$ python python test.py --root_dir "./" --version "1.0" 
+$ python app.py
 '''
-4. Enjoy the results
-```
-$ cd output/epoch
-or
-$ cd report
-```
+![homepage](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/homepage.PNG)
+
+Opening the localhost URL in the browser.
+
+Upload any chest Xray image and click to get the results.
 
 #### Using a pretrained model weights
 Download the model weights as .ckpt file in "./model/" and hit the same commands to train and test with the correct root directory.
 
 ## Results
-![Training gif](https://github.com/MicroprocessorX069/Generalized-pix2pix-GAN-API/blob/master/training_process.GIF)
+![Training gif]()
+
 ## Implementation details
 - [Theoritical details](docs/CONTRIBUTING.md)
 - [Modules](docs/CONTRIBUTING.md)
