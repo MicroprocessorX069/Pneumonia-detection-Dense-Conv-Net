@@ -103,6 +103,9 @@ total_loss = total_loss + 10e-4 * L1_reg
 ## Data augmentation
 ## Bagging and other ensemble methods
 ## Dropout
+```
+torch.nn.Dropout(0.3) # 30% dropping weights
+```
 ## References
 
 https://discuss.pytorch.org/t/how-does-one-implement-weight-regularization-l1-or-l2-manually-without-optimum/7951.
