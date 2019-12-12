@@ -65,7 +65,12 @@ What are activation features? Basically the values to be gotten from network if 
     def hook_fn(self, module, input, output): self.features = ((output.cpu()).data).numpy()
     def remove(self): self.hook.remove()
 ```
-We run one prediction for an image and clip the weights of the trained model.
+We run one prediction for an image and clip the weights of the trained model. 
+
+The input image looks like this.
+
+![Input Image](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/input%20image.png)
+
 ```
 activated_features = SaveFeatures(model._modules.get('densenet121').features.denseblock4.denselayer16)
 #while prediction the hook saved the weights
@@ -96,6 +101,11 @@ def getCAM(feature_conv, weight_fc, class_idx):
     return [cam_img]
 overlay=getCAM(activated_features.features, weight_softmax,class_idx) # clipping the weights and overlaying over the image. 
  ```
+ 
+ The overlay looks like this.
+ 
+ ![CAM](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/cam.png)
+ 
  Resizing to the image size and normalizing as the value divided by the max of all values.
  
 Finally overlapping the actual image with the heat map. The heat map needs to be normalized back to pixel values [0,255]. 
@@ -111,6 +121,9 @@ img = images[0].cpu().numpy()[0]
 imshow(img)
 imshow(skimage.transform.resize(overlay[0], images.shape[2:4]), alpha=0.5, cmap='jet');
  ```
+ The final overlap looks like this
+ 
+ ![Overlay CAM](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/overlay%20cam.png)
 ### References
 
 [Blog on using CAMs for CNN by Divyanshu Mishra] (https://towardsdatascience.com/demystifying-convolutional-neural-networks-using-class-activation-maps-fe94eda4cef1)
