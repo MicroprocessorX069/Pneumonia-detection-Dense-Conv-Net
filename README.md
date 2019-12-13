@@ -61,9 +61,9 @@ pip3 install requirements.txt
 $ python python train.py
 ```
 4.Test
-'''
+```
 $ python app.py
-'''
+```
 ![homepage](https://github.com/MicroprocessorX069/Pneumonia-detection-Dense-Conv-Net/blob/master/documentation/image%20res/homepage.PNG)
 
 Opening the localhost URL in the browser.
